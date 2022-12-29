@@ -9,13 +9,19 @@
 import SwiftUI
 import RiveRuntime
 
+
+let storyboard = UIStoryboard(name: "main", bundle: nil)
+
+let viewController = storyboard.instantiateViewController(withIdentifier: "SignInScreen") as UIViewController
+
 struct ContentView: View {
-    
+
+  
     @State var showSignInScreen = false
     
     var body: some View {
         ZStack {
-            SignInViewControllerRepresentable()
+           // SignInViewControllerRepresentable()
             RiveViewModel(fileName: "welcomescreenbganimation")
                 .view()
                 .ignoresSafeArea()
@@ -29,7 +35,7 @@ struct ContentView: View {
                     .frame(width: 300,height: 200)
                     .position(x:180,y:170)
                     .opacity(0.8)
-                    .padding()
+                    
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width:350,height: 150)
@@ -70,6 +76,7 @@ struct ContentView: View {
                         .shadow(color: .black, radius: 7)
                 }
                 .fullScreenCover(isPresented: self.$showSignInScreen, content: {
+                    SignInViewControllerRepresentable().ignoresSafeArea()
                     
                 })
             }
@@ -88,7 +95,7 @@ struct ContentView_Previews: PreviewProvider {
 struct SignInViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> SignInViewController {
         // Return your SignInViewController here
-        return SignInViewController()
+        return viewController as! SignInViewController
     }
     
     func updateUIViewController(_ uiViewController: SignInViewController, context: Context) {

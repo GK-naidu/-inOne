@@ -1,15 +1,19 @@
 
 import Foundation
 import UIKit
-import SwiftUI
+
 
 
 class SignInViewController : UIViewController {
     
+
+    @IBOutlet weak var GoogleButton: UIButton!
     
-    
-    
-    
+    override func viewDidLoad() {
+        
+     
+        
+      }
     
 }
 

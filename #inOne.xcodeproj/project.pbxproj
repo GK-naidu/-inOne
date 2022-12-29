@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C4C39AC295C60D30060600B /* SignINscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4C39AB295C60D20060600B /* SignINscreen.storyboard */; };
 		9C4C39AE295CAE2C0060600B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C39AD295CAE2C0060600B /* SignInViewController.swift */; };
+		9CBFD983295CCE8C005B5719 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBFD982295CCE8C005B5719 /* main.storyboard */; };
 		9CCCC5792959B626005DBB04 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 9CCCC5782959B626005DBB04 /* RiveRuntime */; };
 		9CCCC58C295A5BBD005DBB04 /* #inoneanimation.riv in Resources */ = {isa = PBXBuildFile; fileRef = 9CCCC58B295A5BBD005DBB04 /* #inoneanimation.riv */; };
 		9CCCC58E295A5BC8005DBB04 /* welcomescreenbganimation.riv in Resources */ = {isa = PBXBuildFile; fileRef = 9CCCC58D295A5BC8005DBB04 /* welcomescreenbganimation.riv */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C4C39AB295C60D20060600B /* SignINscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignINscreen.storyboard; sourceTree = "<group>"; };
 		9C4C39AD295CAE2C0060600B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9CBFD982295CCE8C005B5719 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9CCCC58B295A5BBD005DBB04 /* #inoneanimation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "#inoneanimation.riv"; sourceTree = "<group>"; };
 		9CCCC58D295A5BC8005DBB04 /* welcomescreenbganimation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcomescreenbganimation.riv; sourceTree = "<group>"; };
 		9CEDD07129579585004AC4C5 /* #inOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#inOne.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +116,8 @@
 			children = (
 				9CEDD07429579585004AC4C5 /* _inOneApp.swift */,
 				9CEDD07629579585004AC4C5 /* ContentView.swift */,
-				9C4C39AB295C60D20060600B /* SignINscreen.storyboard */,
 				9C4C39AD295CAE2C0060600B /* SignInViewController.swift */,
+				9CBFD982295CCE8C005B5719 /* main.storyboard */,
 				9CEDD07829579585004AC4C5 /* Assets.xcassets */,
 				9CEDD07A29579585004AC4C5 /* Preview Content */,
 			);
@@ -259,9 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBFD983295CCE8C005B5719 /* main.storyboard in Resources */,
 				9CCCC58E295A5BC8005DBB04 /* welcomescreenbganimation.riv in Resources */,
 				9CEDD07C29579585004AC4C5 /* Preview Assets.xcassets in Resources */,
-				9C4C39AC295C60D30060600B /* SignINscreen.storyboard in Resources */,
 				9CCCC58C295A5BBD005DBB04 /* #inoneanimation.riv in Resources */,
 				9CEDD07929579585004AC4C5 /* Assets.xcassets in Resources */,
 			);
