@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios",
+      "state" : {
+        "revision" : "4e51b71c6ef1b645c9a83de112d627c919143137",
+        "version" : "4.1.3"
+      }
+    },
+    {
       "identity" : "rive-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rive-app/rive-ios",
       "state" : {
-        "revision" : "eabea238cba7242dd2fe69f45fcac01e3265775e",
-        "version" : "3.1.3"
+        "revision" : "b40398b3347869e1646bc6460963550730fece00",
+        "version" : "3.1.4"
       }
     }
   ],

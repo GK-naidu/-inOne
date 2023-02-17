@@ -13,7 +13,7 @@ struct _inOneApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeScreen()
         }
     }
 }
