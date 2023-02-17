@@ -16,12 +16,18 @@ let viewController = storyboard.instantiateViewController(withIdentifier: "SignI
 
 struct WelcomeScreen: View {
 
-  
+     @State var showSignUpScreen = false
     @State var showSignInScreen = false
     
     var body: some View {
         ZStack {
-
+             
+            Image("loginBackgroundWhite")
+                  .resizable()
+                  .scaledToFill()
+                  .frame (minWidth: 0, maxWidth: .infinity,
+                          minHeight: 0, maxHeight: .infinity)
+                  .edgesIgnoringSafeArea(.all)
             RiveViewModel(fileName: "WelcomeFinalAnimation")
                 .view()
                 .ignoresSafeArea()
@@ -33,12 +39,13 @@ struct WelcomeScreen: View {
             VStack {
 
                     
-                LottieView(fileName: "#inOneLottieanimation")
+                LottieView(fileName: "#inOneLottieanimaiton")
                     .frame(width: 300,height: 200)
                     .position(x:180,y:170)
                     
+                    
                 ZStack {
-
+                    
                     HStack {
                         Text(" 👋 Welcome  to")
                             .font(.title2)
@@ -61,21 +68,28 @@ struct WelcomeScreen: View {
                         
                 }
                 
-                Button(action: {
-                    self.showSignInScreen = true
-                }) {
-                    Text("Continue")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(width: 300,height: 60)
-                        .background(Color.blue)
-                        .cornerRadius(30)
-                        .shadow(color: .black, radius: 7)
-                }
-                .fullScreenCover(isPresented: self.$showSignInScreen, content: {
-                    SignInViewControllerRepresentable().ignoresSafeArea()
-                    
-                })
+                    Button(action: {
+//                        self.showSignInScreen = true
+                        self.showSignUpScreen = true
+                    }) {
+                        
+                        Text("Continue")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(width: 350,height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(30)
+                            .opacity(0.8)
+                            .shadow(color: .black, radius: 7)
+                        
+                    }
+                    .padding(.vertical)
+                    .fullScreenCover(isPresented: self.$showSignUpScreen) {
+                        SignUpScreen().transition(.slide)
+                    }
+                
+
+                
             }
         }
         
@@ -86,17 +100,6 @@ struct WelcomeScreen: View {
 struct WelcomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeScreen()
-    }
-}
-
-struct SignInViewControllerRepresentable: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> SignInViewController {
-        // Return your SignInViewController here
-        return viewController as! SignInViewController
-    }
-    
-    func updateUIViewController(_ uiViewController: SignInViewController, context: Context) {
-        // Update your SignInViewController here, if necessary
     }
 }
 
