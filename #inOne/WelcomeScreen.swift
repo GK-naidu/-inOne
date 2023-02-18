@@ -20,6 +20,7 @@ struct WelcomeScreen: View {
     @State var showSignInScreen = false
     
     var body: some View {
+        
         ZStack {
              
             Image("loginBackgroundWhite")

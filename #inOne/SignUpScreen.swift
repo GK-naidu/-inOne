@@ -71,8 +71,6 @@ struct SignUpScreen: View {
                    .padding(.vertical)
                    .shadow(color: .black, radius: 7)
                 
-                
-                
             }
 
         }
