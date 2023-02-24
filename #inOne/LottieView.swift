@@ -8,9 +8,10 @@
 import SwiftUI
 import Lottie
 
-struct LottieView : UIViewRepresentable
+struct LottieView : UIViewRepresentable 
 
 {
+    
     var fileName : String 
     func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         
@@ -21,6 +22,7 @@ struct LottieView : UIViewRepresentable
         let animation = LottieAnimation.named(fileName)
         animationView.animation = animation
         animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop 
         animationView.play()
         
         animationView.translatesAutoresizingMaskIntoConstraints = false

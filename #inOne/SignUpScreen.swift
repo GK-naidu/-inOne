@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SignUpScreen: View {
+    @State private var Home = false
+    @State private var showDetail = false
+
     var body: some View {
         ZStack {
             Image("loginBackgroundWhite")
@@ -26,6 +29,7 @@ struct SignUpScreen: View {
                 
                 Button(action: {
                        // Action to perform when the button is tapped
+                    self.Home = true
                    }) {
                        HStack {
                            Image("apple_Logo_White")
@@ -45,6 +49,9 @@ struct SignUpScreen: View {
                    .padding(.horizontal)
                    .padding(.vertical)
                    .shadow(color: .black, radius: 7)
+                   .fullScreenCover(isPresented: self.$Home) {
+                       _inOne.TabBar().transition(.slide).animation(.easeInOut, value : showDetail)
+                   }
                 
                 
                 

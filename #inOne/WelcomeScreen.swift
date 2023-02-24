@@ -17,7 +17,7 @@ let viewController = storyboard.instantiateViewController(withIdentifier: "SignI
 struct WelcomeScreen: View {
 
      @State var showSignUpScreen = false
-    @State var showSignInScreen = false
+     
     
     var body: some View {
         
