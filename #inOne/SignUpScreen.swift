@@ -58,6 +58,8 @@ struct SignUpScreen: View {
                 
                 Button(action: {
                        // Action to perform when the button is tapped
+                    self.Home = true
+                    
                    }) {
                        HStack {
                            Image("Googl_Logo")
@@ -77,6 +79,9 @@ struct SignUpScreen: View {
                    .padding(.horizontal)
                    .padding(.vertical)
                    .shadow(color: .black, radius: 7)
+                   .fullScreenCover(isPresented: self.$Home) {
+                       _inOne.TabBar().transition(.slide).animation(.easeInOut, value : showDetail)
+                   }
                 
             }
 

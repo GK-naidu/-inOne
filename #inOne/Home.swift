@@ -7,11 +7,17 @@
 
 import SwiftUI
 
-struct Home: View {
+struct Home: View { 
+    
+    @State var TheUrl = ""
     var body: some View {
-        Image("homeSample")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+//        Image("homeSample")
+//            .resizable()
+//            .aspectRatio(contentMode: .fit)
+        VStack{
+            TextField("Enter URL",text: $TheUrl)
+            QRGenerator(url: "\(TheUrl)")
+        }.padding()
     }
 }
 
@@ -20,3 +26,4 @@ struct Home_Previews: PreviewProvider {
         Home()
     }
 }
+

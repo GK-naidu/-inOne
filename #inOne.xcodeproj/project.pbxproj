@@ -21,6 +21,7 @@
 		9CBBE25429A7A37900681E7B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBE25329A7A37900681E7B /* Home.swift */; };
 		9CBBE25629A7A98F00681E7B /* QRsampleAnim.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBE25529A7A98F00681E7B /* QRsampleAnim.json */; };
 		9CCCC5792959B626005DBB04 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 9CCCC5782959B626005DBB04 /* RiveRuntime */; };
+		9CD7376429ACC2CE00D5F65B /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7376329ACC2CE00D5F65B /* QRGenerator.swift */; };
 		9CEDD07529579585004AC4C5 /* _inOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDD07429579585004AC4C5 /* _inOneApp.swift */; };
 		9CEDD07729579585004AC4C5 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEDD07629579585004AC4C5 /* WelcomeScreen.swift */; };
 		9CEDD07929579585004AC4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEDD07829579585004AC4C5 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		9CBBE25129A79C8400681E7B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9CBBE25329A7A37900681E7B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		9CBBE25529A7A98F00681E7B /* QRsampleAnim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QRsampleAnim.json; sourceTree = "<group>"; };
+		9CD7376329ACC2CE00D5F65B /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
 		9CEDD07129579585004AC4C5 /* #inOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#inOne.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEDD07429579585004AC4C5 /* _inOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _inOneApp.swift; sourceTree = "<group>"; };
 		9CEDD07629579585004AC4C5 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				9C7F7CF729A743B6003B7C89 /* TabBar.swift */,
 				9CBBE24F29A79C7B00681E7B /* QrScan.swift */,
 				9CBBE25329A7A37900681E7B /* Home.swift */,
+				9CD7376329ACC2CE00D5F65B /* QRGenerator.swift */,
 				9CBBE25129A79C8400681E7B /* Profile.swift */,
 				9C0A8146299FA0FF00FB4B72 /* SignUpScreen.swift */,
 				9CEDD07829579585004AC4C5 /* Assets.xcassets */,
@@ -325,6 +328,7 @@
 				9CBBE25229A79C8400681E7B /* Profile.swift in Sources */,
 				9CBBE25029A79C7B00681E7B /* QrScan.swift in Sources */,
 				9CEDD07529579585004AC4C5 /* _inOneApp.swift in Sources */,
+				9CD7376429ACC2CE00D5F65B /* QRGenerator.swift in Sources */,
 				9CBBE25429A7A37900681E7B /* Home.swift in Sources */,
 				9C25DD7E299EC79200EA042D /* LottieView.swift in Sources */,
 			);
