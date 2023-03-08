@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct _inOneApp: App {
-    
-    
     var body: some Scene {
         WindowGroup {
             WelcomeScreen()
+                .environment(\.managedObjectContext, IDprovider.shared.viewContext) 
         }
     }
 }

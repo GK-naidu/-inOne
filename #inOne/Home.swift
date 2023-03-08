@@ -7,9 +7,14 @@
 
 import SwiftUI
 
-struct Home: View { 
+struct Home: View {
+    
+//    @Environment(.\managedObjectContext) var idp
     
     @State var TheUrl = ""
+    
+    var id = IDprovider.shared
+    
     var body: some View {
 //        Image("homeSample")
 //            .resizable()
@@ -17,6 +22,8 @@ struct Home: View {
         VStack{
             TextField("Enter URL",text: $TheUrl)
             QRGenerator(url: "\(TheUrl)")
+                
+            
         }.padding()
     }
 }

@@ -12,6 +12,9 @@
 		9C25DD7C299EC5E400EA042D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9C25DD7B299EC5E400EA042D /* Lottie */; };
 		9C25DD7E299EC79200EA042D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C25DD7D299EC79200EA042D /* LottieView.swift */; };
 		9C25DD86299F5F4A00EA042D /* WelcomeFinalAnimation.riv in Resources */ = {isa = PBXBuildFile; fileRef = 9C25DD85299F5F4A00EA042D /* WelcomeFinalAnimation.riv */; };
+		9C6A459129B909D100FDD334 /* UserID.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C6A458F29B909D100FDD334 /* UserID.xcdatamodeld */; };
+		9C6A459329B90AC700FDD334 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6A459229B90AC700FDD334 /* UserData.swift */; };
+		9C6A459529B91A5E00FDD334 /* IDprovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6A459429B91A5E00FDD334 /* IDprovider.swift */; };
 		9C7F7CF829A743B6003B7C89 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F7CF729A743B6003B7C89 /* TabBar.swift */; };
 		9CB8EC29299FDFD50077EFCF /* verification.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CB8EC26299FDFD50077EFCF /* verification.json */; };
 		9CB8EC2A299FDFD50077EFCF /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CB8EC27299FDFD50077EFCF /* contact.json */; };
@@ -53,6 +56,9 @@
 		9C25DD78299EBC7900EA042D /* #inOneLottieanimaiton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "#inOneLottieanimaiton.json"; sourceTree = "<group>"; };
 		9C25DD7D299EC79200EA042D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		9C25DD85299F5F4A00EA042D /* WelcomeFinalAnimation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = WelcomeFinalAnimation.riv; sourceTree = "<group>"; };
+		9C6A459029B909D100FDD334 /* UserID.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserID.xcdatamodel; sourceTree = "<group>"; };
+		9C6A459229B90AC700FDD334 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		9C6A459429B91A5E00FDD334 /* IDprovider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDprovider.swift; sourceTree = "<group>"; };
 		9C7F7CF729A743B6003B7C89 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9CB8EC26299FDFD50077EFCF /* verification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = verification.json; sourceTree = "<group>"; };
 		9CB8EC27299FDFD50077EFCF /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
@@ -141,12 +147,15 @@
 				9CEDD07429579585004AC4C5 /* _inOneApp.swift */,
 				9CEDD07629579585004AC4C5 /* WelcomeScreen.swift */,
 				9C25DD7D299EC79200EA042D /* LottieView.swift */,
+				9C6A459229B90AC700FDD334 /* UserData.swift */,
+				9C6A459429B91A5E00FDD334 /* IDprovider.swift */,
 				9C7F7CF729A743B6003B7C89 /* TabBar.swift */,
 				9CBBE24F29A79C7B00681E7B /* QrScan.swift */,
 				9CBBE25329A7A37900681E7B /* Home.swift */,
 				9CD7376329ACC2CE00D5F65B /* QRGenerator.swift */,
 				9CBBE25129A79C8400681E7B /* Profile.swift */,
 				9C0A8146299FA0FF00FB4B72 /* SignUpScreen.swift */,
+				9C6A458F29B909D100FDD334 /* UserID.xcdatamodeld */,
 				9CEDD07829579585004AC4C5 /* Assets.xcassets */,
 				9CEDD07A29579585004AC4C5 /* Preview Content */,
 			);
@@ -327,10 +336,13 @@
 				9C7F7CF829A743B6003B7C89 /* TabBar.swift in Sources */,
 				9CBBE25229A79C8400681E7B /* Profile.swift in Sources */,
 				9CBBE25029A79C7B00681E7B /* QrScan.swift in Sources */,
+				9C6A459329B90AC700FDD334 /* UserData.swift in Sources */,
 				9CEDD07529579585004AC4C5 /* _inOneApp.swift in Sources */,
 				9CD7376429ACC2CE00D5F65B /* QRGenerator.swift in Sources */,
 				9CBBE25429A7A37900681E7B /* Home.swift in Sources */,
 				9C25DD7E299EC79200EA042D /* LottieView.swift in Sources */,
+				9C6A459129B909D100FDD334 /* UserID.xcdatamodeld in Sources */,
+				9C6A459529B91A5E00FDD334 /* IDprovider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +703,19 @@
 			productName = RiveRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9C6A458F29B909D100FDD334 /* UserID.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C6A459029B909D100FDD334 /* UserID.xcdatamodel */,
+			);
+			currentVersion = 9C6A459029B909D100FDD334 /* UserID.xcdatamodel */;
+			path = UserID.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9CEDD06929579585004AC4C5 /* Project object */;
 }
